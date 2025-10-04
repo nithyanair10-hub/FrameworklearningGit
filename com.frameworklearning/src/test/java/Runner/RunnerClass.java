@@ -9,7 +9,8 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(features="Featurefiles/Datatable2.feature", glue = "StepDefinitions",
 plugin = {
         "pretty",
-        "html:target/cucumber-reports.html"
+        "json:target/cucumber-reports/cucumber.json",
+        "html:target/cucumber-reports/index.html"
     })
 public class RunnerClass {
 
